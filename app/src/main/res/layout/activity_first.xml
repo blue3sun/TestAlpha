@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.monkey.testalpha.MainActivity">
+    <include
+        layout="@layout/layout_action_bar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Page"
+        android:textSize="50dp"
+
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/btn_go_to_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击进入第二个页面"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentLeft="true"/>
+    <Button
+        android:id="@+id/btn_first_change_alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="改变透明度1"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/btn_go_to_second"/>
+    <Button
+        android:id="@+id/btn_second_change_alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="改变透明度2"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/btn_first_change_alpha"
+        android:visibility="gone"/>
+</RelativeLayout>
